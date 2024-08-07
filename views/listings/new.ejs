@@ -1,0 +1,94 @@
+<%layout("/layouts/boilerplate")-%>
+
+    
+<!-- 
+    <form method = "POST" action = "/listings" > 
+        <input name = listing[title] placeholder = "enter title" type = "text" >        
+        <input name = listing[description] placeholder = "enter description" type = "text" >        
+        <input name = listing[image] placeholder = "enter image" type = "text" >        
+        <input name = listing[price] placeholder = "enter price" type = "Number" >        
+        <input name = listing[country] placeholder = "enter country" type = "text" >        
+        <input name = listing[location] placeholder = "enter location" type = "text" >        
+
+        <button> Add </button>
+    </form>
+
+
+</body>
+</html> -->
+
+
+
+<body>
+    
+    <div class = "row" >
+        <div class = "col-8 offset-2 "   >
+<h1> RADHA K KRISHNA </h1>
+<h3> Create New Listing </h3>
+
+<form
+ method = "POST"
+   action = "/listings"
+    novalidate
+     class = "needs-validation"
+     enctype = "multipart/form-data"   >
+
+    <div class = "mb-3" >
+    <label for = "title" class = "form-label" > Title </label>
+    <input name = "listing[title]" required  placeholder = "enter title" type = "text" class = "form-control" required >
+    <div class = "valid-feedback" >Title looks good </div>   
+    <div class = "invalid-feedback" >enter valid Title </div>   
+</div>
+
+    <div class = "mb-3" >
+        <label for = "description" class = "form-label"   > Description </label>
+        <textarea 
+        name = "listing[description]"
+        class = "form-control" required  ></textarea>
+        <div class = "valid-feedback" >Description looks good </div>   
+        <div class = "invalid-feedback" >enter valid Description </div>       
+    </div>
+    <!-- <div class = "mb-3" >
+        <label for = "image" class = "form-label"  > Image URL </label>
+        <input name = "listing[image]" required  placeholder = "enter url for image"  class = "form-control">
+    </div> -->
+
+    <div class = "mb-3" >
+        <label for = "image" class = "form-label"  > Upload Image  </label>
+        <input name = "listing[image]" required   type = "file"  class = "form-control">
+    </div>
+
+    
+    <div class = "row" > 
+    
+    <div class = "mb-3  col-md-4" > 
+    <label for = "Price" class = "form-label"> Price </label>
+        <input name = "listing[price]" type = "Number"  placeholder = "enter price"  required class = "form-control" >
+        <div class = "valid-feedback" >Price looks good </div>   
+        <div class = "invalid-feedback" >enter valid Price </div>       
+    </div>
+    
+    <div class = "mb-3 col-md-8 "  >
+        <label for = "Country" class = "form-label"> Country </label>
+        <input name = "listing[country]" required placeholder = "enter country"  class = "form-control"  >
+        <div class = "valid-feedback" > country looks good</div>   
+        <div class = "invalid-feedback" >enter valid Country name </div>       
+    </div>
+    </div>
+    
+    <div class = "mb-3" >
+        <label for = "Location" class = "form-label"> Location </label>
+        <input name = "listing[location]"  required placeholder = "enter location" class = "form-control">
+        <div class = "valid-feedback" >Location looks good </div>   
+        <div class = "invalid-feedback" >enter valid Location </div>       
+    </div>
+
+<br>
+</div></div>
+<button  class="btn btn-primary btn-md"  >Add</button>
+</form><br>
+
+<script src = "/js/script.js" >  </script>
+
+
+

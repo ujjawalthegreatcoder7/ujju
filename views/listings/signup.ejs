@@ -1,0 +1,95 @@
+<%layout("/layouts/boilerplate")-%>
+
+ <div class = "row mt-3" >
+    
+    <div class = "col-6 offset-3" > 
+          <form action = "/signup" method = "POST" novalidate class = "needs-validation" >
+               
+<h1> RADHA ji </h1>
+<h3> Sign-Up </h3>
+
+            <!-- <div class = "mb-3" >
+                <label for = "UserName" class = "form-label" > UserName </label>
+                <input name = "listing[title]" required  placeholder = "enter UserName" type = "text" class = "form-control" required >
+                <div class = "valid-feedback" >UserName looks good </div>   
+                <div class = "invalid-feedback" >UserName valid Title </div>   
+            </div> -->
+
+            <div class="form-floating mt-3 ">
+                <input type="text"
+                 class="form-control"
+                   placeholder="name@example.com"   
+                   name = "username" required>
+                   <div class = "valid-feedback" > Username looks good </div>
+                   <div class = "invalid-feedback" > please enter Username </div>
+
+                <label for="username ">UserName</label>
+              </div>
+
+
+
+            <div class="form-floating mt-3 ">
+                <input type="email"
+                 class="form-control"
+                   placeholder="name@example.com"   
+                   name = "email" required>
+                   <div class = "valid-feedback" >  email looks good </div>
+                   <div class = "invalid-feedback" > please enter email  </div>
+                <label for="email">E-mail</label>
+              </div>
+
+              <div class="form-floating mt-3">
+                <input type="password" required class="form-control"  placeholder="name@example.com" name = "password" >
+                <div class = "valid-feedback" >  Password looks good </div>
+                <div class = "invalid-feedback" > please enter Password </div>
+                <label for="password">Password</label>
+              </div>
+             
+            <!-- <div class = "mb-3  "  >
+                <label for = "Password" class = "form-label"> Password </label>
+                <input type  = "password" name = "listing[country]" required placeholder = "enter Password"  class = "form-control"  >
+                <div class = "valid-feedback" > Password looks good</div>   
+                <div class = "invalid-feedback" >enter valid Password  </div>       
+            </div> -->
+
+            <button type="button " class="btn mt-3 btn-success">Success</button>
+
+          </form>
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
