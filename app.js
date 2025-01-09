@@ -1,4 +1,4 @@
-if(process.env.NODE_ENV != "production" ) {
+if(process.env.MAP_TOKEN != "production" ) {
     require('dotenv').config() ; // yes bhai isko require krne ka style thoda casual hai  mazaak se hat k thoda alag hai             
     
 }
